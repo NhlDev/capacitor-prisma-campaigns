@@ -1,3 +1,5 @@
+
 export interface PrismaPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  Load(config: { server: string, port: string, appToken: string, customerId: string, protocol: string }): void;
+  Subscribe(options: {registrationToken:string}): void;
 }
