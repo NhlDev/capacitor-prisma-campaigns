@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-prisma-campaigns",
+  "name": "@nhldev/capacitor-prisma-campaigns",
   "version": "0.0.1",
   "description": "Capacitor plugin for Prisma Campaigns integration.",
   "main": "dist/plugin.cjs.js",
@@ -74,5 +74,7 @@
     "android": {
       "src": "android"
     }
-  }
+  },
+  "homepage": "https://github.com/nhldev/capacitor-prisma-campaigns#readme",
+  "dependencies": {}
 }

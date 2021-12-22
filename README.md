@@ -1,11 +1,16 @@
-# capacitor-prisma-campagins
+# capacitor-prisma-campaigns
 
 Capacitor plugin for Prisma Campaigns integration.
+For more information, please visit: http://docs.prismacampaigns.com/en/
+
+## WARNING
+
+This is a work in progress. IOS and web functionality is not implemented yet.
 
 ## Install
 
 ```bash
-npm install capacitor-prisma-campagins
+npm install capacitor-prisma-campaigns
 npx cap sync
 ```
 
