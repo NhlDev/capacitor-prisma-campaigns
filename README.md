@@ -5,7 +5,7 @@ For more information, please visit: http://docs.prismacampaigns.com/en/
 
 ## WARNING
 
-This is a work in progress. IOS and web functionality is not implemented yet.
+This is a work in progress. IOS and web functionality are not implemented yet.
 
 ## Install
 
