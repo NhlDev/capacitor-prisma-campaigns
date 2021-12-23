@@ -40,4 +40,9 @@ public class PrismaPlugin extends Plugin {
         implementation.Subscribe(regToken);
         call.resolve();
     }
+
+    @PluginMethod
+    public  void SyncPage(PluginCall call){
+        call.resolve();
+    }
 }

@@ -1,5 +1,19 @@
 
 export interface PrismaPlugin {
-  Load(config: { server: string, port: string, appToken: string, customerId: string, protocol: string }): void;
-  Subscribe(options: {registrationToken:string}): void;
+  Load(options: PrismaConfiguration): void;
+  Subscribe(options: PrismaPushToken): void;
+  SyncPage(options: any): Promise<any>;
 }
+
+export interface PrismaConfiguration {
+  server: string;
+  port: string;
+  appToken: string;
+  customerId: string;
+  protocol: string;
+}
+
+export interface PrismaPushToken {
+  registrationToken: string;
+}
+
