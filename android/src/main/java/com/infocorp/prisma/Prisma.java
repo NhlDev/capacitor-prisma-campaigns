@@ -1,8 +1,9 @@
 package com.infocorp.prisma;
 
 import android.app.Application;
-import android.util.Log;
 import com.prismacampaigns.sdk.*;
+
+import java.util.List;
 
 public class Prisma {
 
@@ -19,5 +20,9 @@ public class Prisma {
 
     public void Subscribe(String registrationToken){
         Client.shared.subscribe(registrationToken);
+    }
+
+    public void SyncPage(List<String>placeHolders, String location, boolean syncPopUps, ResponseHandler handler) {
+        Client.shared.syncPageAPI(placeHolders, location, syncPopUps, handler);
     }
 }

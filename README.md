@@ -20,6 +20,8 @@ npx cap sync
 
 * [`Load(...)`](#load)
 * [`Subscribe(...)`](#subscribe)
+* [`SyncPage(...)`](#syncpage)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -29,12 +31,14 @@ npx cap sync
 ### Load(...)
 
 ```typescript
-Load(config: { server: string; port: string; appToken: string; customerId: string; protocol: string; }) => void
+Load(options: PrismaConfiguration) => Promise<any>
 ```
 
-| Param        | Type                                                                                                   |
-| ------------ | ------------------------------------------------------------------------------------------------------ |
-| **`config`** | <code>{ server: string; port: string; appToken: string; customerId: string; protocol: string; }</code> |
+| Param         | Type                                                                |
+| ------------- | ------------------------------------------------------------------- |
+| **`options`** | <code><a href="#prismaconfiguration">PrismaConfiguration</a></code> |
+
+**Returns:** <code>Promise&lt;any&gt;</code>
 
 --------------------
 
@@ -42,13 +46,49 @@ Load(config: { server: string; port: string; appToken: string; customerId: strin
 ### Subscribe(...)
 
 ```typescript
-Subscribe(options: { registrationToken: string; }) => void
+Subscribe(options: PrismaPushToken) => Promise<void>
 ```
 
-| Param         | Type                                        |
-| ------------- | ------------------------------------------- |
-| **`options`** | <code>{ registrationToken: string; }</code> |
+| Param         | Type                                                        |
+| ------------- | ----------------------------------------------------------- |
+| **`options`** | <code><a href="#prismapushtoken">PrismaPushToken</a></code> |
 
 --------------------
+
+
+### SyncPage(...)
+
+```typescript
+SyncPage(options: any) => Promise<any>
+```
+
+| Param         | Type             |
+| ------------- | ---------------- |
+| **`options`** | <code>any</code> |
+
+**Returns:** <code>Promise&lt;any&gt;</code>
+
+--------------------
+
+
+### Interfaces
+
+
+#### PrismaConfiguration
+
+| Prop             | Type                |
+| ---------------- | ------------------- |
+| **`server`**     | <code>string</code> |
+| **`port`**       | <code>string</code> |
+| **`appToken`**   | <code>string</code> |
+| **`customerId`** | <code>string</code> |
+| **`protocol`**   | <code>string</code> |
+
+
+#### PrismaPushToken
+
+| Prop                    | Type                |
+| ----------------------- | ------------------- |
+| **`registrationToken`** | <code>string</code> |
 
 </docgen-api>
